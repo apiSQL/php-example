@@ -1,5 +1,7 @@
-# php-example
-example.php.apisql.com
+# php-example , example.php.apisql.com
+
+https://github.com/apiSQL/php-example
+
 
 https://apisql.github.io/php-example/
 
