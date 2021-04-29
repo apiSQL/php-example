@@ -12,4 +12,10 @@ https://example.php.apisql.com/
 
 ## Start
 
+Browser Table HTML
+
     php index.php
+
+Console with loading function by load_func
+
+    php index2.php
