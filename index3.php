@@ -9,7 +9,7 @@ load_func(['https://php.letjson.com/let_json.php', 'https://php.defjson.com/def_
     let_json('http://example.php.apisql.com/config.json', function($config){
 
         // load data from sqlite based on json configuration: config.json
-        api_sql($config->db, $config->sql, function ($fetch) {
+        api_sql($config->db, $config->read, function ($fetch) {
 
             def_json('data.json', $fetch, function ($data){
 

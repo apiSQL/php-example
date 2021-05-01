@@ -1,4 +1,0 @@
-{
-  "db": "sqlite:db.sqlite3",
-  "sql": "SELECT * FROM `member` ORDER BY `lastname` ASC"
-}

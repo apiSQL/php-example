@@ -7,7 +7,10 @@ include 'load_func.php';
 try {
 
     # Load functions from remote/local
-    load_func(['https://php.letjson.com/let_json.php', 'https://php.defjson.com/def_json.php', 'https://php.apisql.com/api_sql.php', 'https://php.apisql.com/api_sql.php'], function ($func_url_array) {
+    load_func([
+        'https://php.letjson.com/let_json.php',
+        'https://php.defjson.com/def_json.php',
+        'https://php.apisql.com/api_sql.php'], function ($func_url_array) {
 
         // Load config file from remote/local json file
         let_json('config.json', function ($config) {
