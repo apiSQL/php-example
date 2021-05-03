@@ -3,19 +3,25 @@
 include 'load_func.php';
 
 # Load functions from remote/local
-load_func(['https://php.letjson.com/let_json.php', 'https://php.defjson.com/def_json.php', 'https://php.apisql.com/api_sql.php'], function ($func_url_array) {
+load_func([
+    'https://php.letjson.com/let_json.php',
+    'https://php.defjson.com/def_json.php',
+    'https://php.apisql.com/api_sql.php'
+], function ($func_url_array) {
 
     // Load config file from remote/local json file
-    let_json('http://example.php.apisql.com/config.json', function($config){
+    let_json('db.json', function ($db) {
 
-        // load data from sqlite based on json configuration: config.json
-        api_sql($config->db, $config->read, function ($fetch) {
+        var_dump($db);
 
-            def_json('data.json', $fetch, function ($data){
+        // load data from sqlite based on json configuration: db.json
+        api_sql($db->db, $db->read, function ($fetch) {
 
-                let_json('data.json', function($data){
-                    var_dump($data);
-                });
+            // WRITE data from sqlite
+            def_json('data.json', $fetch, function () {
+
+                // READ saved DATA from sqlite
+                var_dump( let_json('data.json') );
             });
         });
     });

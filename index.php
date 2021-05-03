@@ -1,6 +1,6 @@
 <?php
 // curl https://apisql.github.io/php/api_sql.php --output api_sql.php
-include 'api_sql.php';
+include '.load_func/api_sql.php';
 ?>
 
 <table class="table table-bordered">
