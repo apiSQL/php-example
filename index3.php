@@ -1,9 +1,9 @@
 <?php
-// curl https://loadfunc.github.io/php/load_func.php --output load_func.php
-include 'load_func.php';
+// curl https://loadfunc.github.io/php/apifunc.php --output apifunc.php
+include 'apifunc.php';
 
 # Load functions from remote/local
-load_func([
+apifunc([
     'https://php.letjson.com/let_json.php',
     'https://php.defjson.com/def_json.php',
     'https://php.apisql.com/api_sql.php'

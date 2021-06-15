@@ -9,14 +9,34 @@ https://example.php.apisql.com/
 
 
 
+
+## on windows
+
+
+### install
+    .apifunc\\download.bat
+
+### install
+    .apibuild\\install.bat
+
+### install
+    .apifunc\\install.bat
+
+### start
+    .apiexec\\start.bat
+
+### open in browser
+    .apicra\\browser.bat
+
+
 ## Install from bash
 from domain: php.loadfunc.com
 
-    curl https://php.loadfunc.com/load_func.php --output load_func.php
+    curl https://php.loadfunc.com/apifunc.php --output apifunc.php
 
 from github
 
-    curl https://loadfunc.github.io/php/load_func.php --output load_func.php
+    curl https://loadfunc.github.io/php/apifunc.php --output apifunc.php
 
 
 ## Install with composer
@@ -42,7 +62,7 @@ Browser Table HTML
 
     php index.php
 
-Console with loading function by load_func
+Console with loading function by apifunc
 
     php index2.php
 

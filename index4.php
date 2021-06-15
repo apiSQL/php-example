@@ -1,14 +1,14 @@
 <?php
-# curl https://php.loadfunc.com/load_func.php --output load_func.php
-# curl https://loadfunc.github.io/php/load_func.php --output load_func.php
-include 'load_func.php';
+# curl https://php.loadfunc.com/apifunc.php --output apifunc.php
+# curl https://loadfunc.github.io/php/apifunc.php --output apifunc.php
+include 'apifunc.php';
 header('Content-Type: application/json');
 
 # Webs service with JSON
 try {
 
     # Load functions from remote/local
-    load_func([
+    apifunc([
         'https://php.letjson.com/let_json.php',
         'https://php.defjson.com/def_json.php',
         'https://php.apisql.com/api_sql.php'], function ($func_url_array) {
